@@ -91,8 +91,8 @@ def createEvent(label, text):
   data = eval(text)
   types = data["Types"]
   collectionNames = [ x.split("\":")[0].strip("\"")
-                      for x in text.split("\'Types\': {")[1]
-                                   .split("\'Collections\'")[0]
+                      for x in text.split("\"Types\": {")[1]
+                                   .split("\"Collections\"")[0]
                                    .split("\n")
                       if '":' in x]
 
